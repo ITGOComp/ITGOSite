@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/aboutGOG.css">
+    <link rel="icon" href="../static/images/ITGOGame.png" type="image/x-icon">
+    <title>О нас</title>
+</head>
+<body>
+    <header class="header"> <!-- Блок заголовка страницы -->
+        <a href="../ITGOGames/">
+            <img src="../static/images/ITGOGames-logo.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../ITGOGames/">Главная</a></li>
+                <li><a href="../aboutITGOGames/">О нас</a></li>
+                <li><a href="../ITGOGContact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slogan-container">
+            <img src="../static/images/TGOGame-verh.png" class="slogan">
+        </div>
+    </div>
+    <div class="ITGOlt">
+        <img src="../static/images/ITGO_Games.png" class="logoITGO-img">
+        <p class="textITGO">ITGO Games</p>
+        <p class="aboutITGO">ITGO Games — дочерняя компания ITGO, специализирующаяся на разработке увлекательных и инновационных игр для различных платформ.
+            <br> <br>Наши игры:</p>
+        <ol class="number">
+            <li>Мобильные игры: Мы создаем захватывающие мобильные игры для iOS и Android, которые поражают удивительной графикой, увлекательным геймплеем и высокой переиграбельностью.</li><br>
+            <li>Игры для социальных платформ: Наша команда разрабатывает игры для различных социальных платформ, таких как Yandex и VKontakte, чтобы предоставить пользователям новые способы взаимодействия и развлечения.</li>
+        </ol>
+        <p class="aboutdopITGO">Мы стремимся к тому, чтобы каждый наш проект был уникальным и приносил радость и удовлетворение нашим клиентам. С ITGO Games ваши развлечения станут более захватывающими.</p>
+    </div>
+    <div class="button-container1">
+        <a href="../ITGOGames/" class="button-link">
+            <img src="../static/images/uzn-ITGOG.png" class="button-img1" alt="Узнать больше" id="button-img1">
+        </a>
+    </div>
+    <script>
+        const buttonImg2 = document.getElementById('button-img1');
+        buttonImg2.addEventListener('mouseover', () => {
+            buttonImg2.src = '../static/images/uzn-ITGOG-naz.png';
+        });
+        buttonImg2.addEventListener('mouseout', () => {
+            buttonImg2.src = '../static/images/uzn-ITGOG.png';
+        });
+    </script>
+</body>
+</html>

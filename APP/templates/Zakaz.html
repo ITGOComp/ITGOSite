@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../static/images/ITGOlog.png" type="image/x-icon">
+    <title>Сделать заказ</title>
+    <!--Стили карточки товара-->
+    <style> .powered {display:none} </style>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            margin-bottom: -150px; /* Добавляем отступ снизу для создания расстояния */
+        }
+        .product-container {
+            margin-top: -150px; /* Добавляем отступ сверху для создания расстояния */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(0, 0, 0);
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: white;
+            z-index: 500;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .header nav {
+            margin-left: auto;
+        }
+
+        .header nav ul {
+            list-style-type: none;
+        }
+
+        .header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .header nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .logo {
+            width: 160px;
+            height: auto;
+        }
+
+        .content {
+            margin-top: 50px;
+        }
+
+        .slogan-container {
+            text-align: center;
+            width: 100%;
+            height: 70vh;
+            overflow: hidden;
+        }
+
+        .slogan {
+            max-width: 200%;
+            max-height: 500px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header {
+            transition: height 0.3s ease;
+        }
+        .product-block {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 10px; /* Добавлено для создания промежутков между карточками */
+            width: calc(33.33% - 10px); /* Ширина карточки товара, учитывая промежутки */
+            float: left; /* Для расположения карточек товаров в одну линию */
+            box-sizing: border-box; /* Учитываем рамки и отступы в общей ширине */
+            margin-bottom: 20px; /* Добавлено для создания отступа между строками */
+            height: 700px; /* Фиксированная высота для карточек */
+        }
+        .product-container::after {
+            content: "";
+            display: table;
+            clear: both; /* Переход на новую строку после каждой строки карточек */
+        }
+        .product-details {
+            margin-top: 10px;
+        }
+        .product-details h2 {
+            margin-bottom: 5px;
+        }
+        .price {
+            font-weight: bold;
+        }
+        .description {
+            margin-top: 5px;
+        }
+        .product-image {
+            max-width: 100%; /* Максимальная ширина изображения */
+            height: auto; /* Автоматическое изменение высоты, чтобы сохранить пропорции */
+            display: block; /* Убираем лишние промежутки вокруг изображения */
+            margin-bottom: 10px; /* Добавляем отступ снизу для разделения изображения и остальных данных */
+        }
+
+        @media (max-width: 768px) { /* Для адаптивного макета */
+            .product-block {
+                width: calc(50% - 10px); /* При разрешении экрана <768px карточки будут занимать половину ширины */
+            }
+        }
+        @media (max-width: 480px) { /* Для маленьких устройств */
+            .product-block {
+                width: 100%; /* На самых маленьких устройствах карточки будут занимать всю ширину */
+                margin-right: 0; /* Убираем отступы */
+                margin-bottom: 10px; /* Добавляем отступ снизу */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="../ITGO/">
+            <img src="../static/images/ITGO_nazvanie_bezfona.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../ITGO/">Главная</a></li>
+                <li><a href="../ITGOabout/">О нас</a></li>
+                <li><a href="../ITGOContact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="slogan-container">
+            <img src="../static/images/ITGO_slogan.png" class="slogan">
+        </div>
+    <div class="product-container">
+        <div class="product-block">
+            <img class="product-image" src="../static/images/ITGO_futbolka_muzhskaya.png" alt="Product Image">
+            <div class="product-details">
+                <h2>Футболка мужская</h2>
+                <p class="price">Цена: 5 000₽</p>
+                <p class="description">Футболка из 100% хлопка. Удобная и стильная, подходит для повседневной носки.</p>
+                <p class="price">10 штук</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336393">Заказать</a>
+            </div>
+        </div>
+        <div class="product-block">
+            <img class="product-image" src="../static/images/ITGO_futbolka_zhenskaya.png" alt="Product Image">
+            <div class="product-details">
+                <h2>Футболка женская</h2>
+                <p class="price">Цена: 5 000₽</p>
+                <p class="description">Футболка из 100% хлопка. Удобная и стильная, подходит для повседневной носки.</p>
+                <p class="price">10 штук</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336392">Заказать</a>
+            </div>
+        </div>
+        <div class="product-block">
+            <img class="product-image" src="../static/images/ITGO_korobka.png" alt="Product Image">
+            <div class="product-details">
+                <h2>Брендированные вещи</h2>
+                <p class="price">Цена: 1 000₽</p>
+                <p class="price">10 штук</p>
+                <p class="description">Брендированные вещи для вашей компании.(5 коробок, 5 пакетов)</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336401">Заказать</a>
+            </div>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product-block">
+            <img class="product-image" src="../static/images/ITGO_prilozhenie.png" alt="Product Image">
+            <div class="product-details">
+                <h2>Готовое приложение</h2>
+                <p class="price">Цена: 100 000₽</p>
+                <p class="description">Сделаем много функциональное приложение под ваши нужды.</p>
+                <p class="price">1 штука</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336399">Заказать</a>
+            </div>
+        </div>
+        <div class="product-block">
+            <img class="product-image" src="../static/images/site.jpg" alt="Product Image">
+            <div class="product-details">
+                <h2>Готовый сайт</h2>
+                <p class="price">Цена: 150 000₽</p>
+                <p class="description">Сделаем много функциональный сайт под ваши нужды.</p>
+                <p class="price">1 штука</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336400">Заказать</a>
+            </div>
+        </div>
+        <div class="product-block">
+            <img class="product-image" src="../static/images/ITGO_LOGO.png" alt="Product Image">
+            <div class="product-details">
+                <h2>Готовый логотип</h2>
+                <p class="price">Цена: 7 000</p>
+                <p class="description">Сделаем простой и красивый логотип для вашей компании.</p>
+                <p class="price">1 штука</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336402">Заказать</a>
+            </div>
+        </div>
+    </div>
+    <div class="product-container">
+        <div class="product-block">
+            <img class="product-image" src="../static/images/ITGO_offis.png" alt="Product Image">
+            <div class="product-details">
+                <h2>Поиск офиса</h2>
+                <p class="price">Цена: 50 000</p>
+                <p class="description">Найдем офис для вашей компании в удобном месте.</p>
+                <p class="price">1 штука</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336403">Заказать</a>
+            </div>
+        </div>
+        <div class="product-block">
+            <img class="product-image" src="../static/images/ITGO_viviska.png" alt="Product Image">
+            <div class="product-details">
+                <h2>Оформление офиса</h2>
+                <p class="price">Цена: 300 000</p>
+                <p class="description">Оформим офис для вашей компании в вашем стиле.</p>
+                <p class="price">1 штука</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336404">Заказать</a>
+            </div>
+        </div>
+        <div class="product-block">
+            <img class="product-image" src="../static/images/top_company.png" alt="Product Image">
+            <div class="product-details">
+                <h2>Продвижение</h2>
+                <p class="price">Цена: 500 000</p>
+                <p class="description">Начнем продвигать вашу компанию в топы!</p>
+                <p class="price">1 штука</p>
+                <a class="btn-ens-action btn-ens-style" data-rel="ba2893ca336405">Заказать</a>
+            </div>
+        </div>
+    </div>
+    <!-- Дополнительные карточки товаров могут быть добавлены здесь -->
+
+    <!--Библиотека jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!--Готовый скрипт корзины-->
+    <script defer src="https://lk.easynetshop.ru/frontend/v5/ens-ba2893ca.js"></script>
+
+    <!--Стили элементов для корзины-->
+    <link href="https://lk.easynetshop.ru/frontend/v5/ens-ba2893ca.css" rel="stylesheet">
+</body>
+</html>

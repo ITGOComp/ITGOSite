@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/Download.css">
+    <link rel="icon" href="../static/images/ITGOGame.png" type="image/x-icon">
+    <title>История Лиама</title>
+</head>
+<body>
+    <header class="header"> <!-- Блок заголовка страницы -->
+        <a href="../ITGOGames/">
+            <img src="../static/images/ITGOGames-logo.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../ITGOGames/">Главная</a></li>
+                <li><a href="../aboutITGOGames/">О нас</a></li>
+                <li><a href="../ITGOGContact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slogan-container">
+            <img src="../static/images/TGOGame-verh.png" class="slogan">
+        </div>
+    </div>
+    <div class="ITGOl">
+        <img src="../static/images/liam-prav.png" class="logoITGO-img">
+        <p class="textITGO">История Лиама</p>
+        <p class="aboutITGO">Лиам из уютной деревни Линдор хочет начать новую жизнь в городе FreeCiti. Для этого ему нужно пройти через множество испытаний, разгадать загадки и встретиться с различными персонажами, помогающими или противодействующими ему. Игра предлагает красочную графику и атмосферный саундтрек, интересных персонажей с разными характерами, разнообразные локации от деревни до города, головоломки требующие логики и внимательности, а также несколько вариантов развития сюжета в зависимости от решений игрока.</p>
+    </div>
+    <div class="ITGOlt">
+        <!-- Блок скачивания для Mac OS -->
+        <div class="download-block mac">
+            <p>Скачать для Mac OS</p>
+            <a href="../mac_download/" class="button-link" download>ZIP</a>
+        </div>
+    
+        <!-- Блок скачивания для Windows -->
+        <div class="download-block windows">
+            <p>Скачать для Windows</p>
+            <a href="../windows_download_zip/" class="button-link" download>ZIP</a>
+            <a href="../windows_download_exe/" class="button-link" download>EXE</a>
+        </div>
+    
+        <!-- Блок скачивания для Linux -->
+        <div class="download-block linux">
+            <p>Скачать для Linux</p>
+            <a href="../linux_download/" class="button-link" download>BZ2</a>
+        </div>
+    </div>
+    
+    <div class="ITGOlr">
+        <!-- Блок для Android -->
+        <div class="download-block android">
+            <p>Скачать для Android</p>
+            <a href="../android_download/" class="button-link">APK</a>
+        </div>
+        <!-- Блок для игры в Яндекс Играх -->
+        <div class="download-block yandex">
+            <p>Играть в Яндекс Играх</p>
+            <a href="https://yandex.ru/games/app/344440?draft=true&lang=ru" class="button-link">Играть</a>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="../AllGame/" class="button-link button-link-back">
+            <img src="../static/images/nazad.png" class="button-img" alt="Узнать больше" id="button-img">
+        </a>
+    </div>
+    <script>
+        const buttonImg = document.getElementById('button-img');
+        buttonImg.addEventListener('mouseover', () => {
+            buttonImg.src = '../static/images/nazad-naz.png';
+        });
+        buttonImg.addEventListener('mouseout', () => {
+            buttonImg.src = '../static/images/nazad.png';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/Contact.css">
+    <link rel="icon" href="../static/images/ITGOlog.png" type="image/x-icon">
+    <title>Контакты</title>
+</head>
+<body>
+    <header class="header"> <!-- Блок заголовка страницы -->
+        <a href="../ITGO/">
+            <img src="../static/images/ITGO_nazvanie_bezfona.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../ITGO/">Главная</a></li>
+                <li><a href="../ITGOabout/">О нас</a></li>
+                <li><a href="../ITGOContact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slogan-container">
+            <img src="../static/images/ITGO_slogan.png" class="slogan">
+        </div>
+    </div>
+    <div class="ITGOlt">
+        <img src="../static/images/ITGOlogo.png" class="logoITGO-img">
+        <p class="textITGO">ITGO (Information Technology Group Online)</p>
+        <p class="aboutITGO"><br>Контакты компании ITGO:<br><br></p>
+        <img src="../static/images/telegram-logo.png" class="logoITGO-img">
+        <div class="button-row">
+            <div class="button-container">
+                <a href="https://t.me/ITGOPodderzhka_bot" class="button-link">
+                    <img src="../static/images/PodderzhkaTG.png" class="button-img" alt="Узнать больше" id="button-img1">
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="https://t.me/OtzvITGO" class="button-link">
+                    <img src="../static/images/otzvTG.png" class="button-img" alt="Узнать больше" id="button-img2">
+                </a>
+            </div>
+            <div class="button-container">
+                <a href="https://t.me/ITGOCHAT" class="button-link">
+                    <img src="../static/images/chatTG.png" class="button-img" alt="Узнать больше" id="button-img3">
+                </a>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="https://t.me/ITGOShop_bot" class="button-link">
+                <img src="../static/images/weTG.png" class="button-img" alt="Узнать больше" id="button-img4">
+            </a>
+        </div>
+
+        <div class="ITGOlt">
+            <img src="../static/images/vkontakte-logo.png" class="logoITGO-img1">
+            <div class="button-row">
+                <div class="button-container">
+                    <a href="https://t.me/ITGOPodderzhka_bot" class="button-link">
+                        <img src="../static/images/weVK.png" class="button-img" alt="Узнать больше" id="button-img5">
+                    </a>
+                </div>
+                <div class="button-container">
+                    <a href="https://t.me/OtzvITGO" class="button-link">
+                        <img src="../static/images/otzvVK.png" class="button-img" alt="Узнать больше" id="button-img6">
+                    </a>
+                </div>
+            </div>
+
+        <script>
+            const buttonImg1 = document.getElementById('button-img1');
+            buttonImg1.addEventListener('mouseover', () => {
+                buttonImg1.src = '../static/images/PodderzhkaTG-naz.png';
+            });
+            buttonImg1.addEventListener('mouseout', () => {
+                buttonImg1.src = '../static/images/PodderzhkaTG.png';
+            });
+
+            const buttonImg2 = document.getElementById('button-img2');
+            buttonImg2.addEventListener('mouseover', () => {
+                buttonImg2.src = '../static/images/otzvTG-naz.png';
+            });
+            buttonImg2.addEventListener('mouseout', () => {
+                buttonImg2.src = '../static/images/otzvTG.png';
+            });
+
+            const buttonImg3 = document.getElementById('button-img3');
+            buttonImg3.addEventListener('mouseover', () => {
+                buttonImg3.src = '../static/images/chatTG-naz.png';
+            });
+            buttonImg3.addEventListener('mouseout', () => {
+                buttonImg3.src = '../static/images/chatTG.png';
+            });
+
+            const buttonImg4 = document.getElementById('button-img4');
+            buttonImg4.addEventListener('mouseover', () => {
+                buttonImg4.src = '../static/images/weTG-naz.png';
+            });
+            buttonImg4.addEventListener('mouseout', () => {
+                buttonImg4.src = '../static/images/weTG.png';
+            });
+
+            const buttonImg5 = document.getElementById('button-img5');
+            buttonImg5.addEventListener('mouseover', () => {
+                buttonImg5.src = '../static/images/weVK-naz.png';
+            });
+            buttonImg5.addEventListener('mouseout', () => {
+                buttonImg5.src = '../static/images/weVK.png';
+            });
+
+            const buttonImg6 = document.getElementById('button-img6');
+            buttonImg6.addEventListener('mouseover', () => {
+                buttonImg6.src = '../static/images/otzvVK-naz.png';
+            });
+            buttonImg6.addEventListener('mouseout', () => {
+                buttonImg6.src = '../static/images/otzvVK.png';
+            });
+        </script>
+    </div>
+</body>
+</html>

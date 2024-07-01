@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/ITGOGames.css">
+    <link rel="icon" href="../static/images/ITGOGame.png" type="image/x-icon">
+    <title>ITGO Games</title>
+</head>
+<body>
+    <header class="header"> <!-- Блок заголовка страницы -->
+        <a href="../ITGOGames/">
+            <img src="../static/images/ITGOGames-logo.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../ITGOGames/">Главная</a></li>
+                <li><a href="../aboutITGOGames/">О нас</a></li>
+                <li><a href="../ITGOGContact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slogan-container">
+            <img src="../static/images/TGOGame-verh.png" class="slogan">
+        </div>
+    </div>
+    <div class="ITGOlt">
+        <img src="../static/images/ITGO_Games.png" class="logoITGO-img">
+        <p class="textITGO">ITGO Games</p>
+        <p class="aboutITGO">ITGO Games — дочерняя компания ITGO, специализирующаяся на разработке увлекательных и инновационных игр для различных платформ.</p>
+        <p class="aboutITGO1">О компании</p>
+        <p class="aboutITGO">ITGO Games — молодая и амбициозная студия разработки игр, стремящаяся создавать увлекательные и захватывающие игровые проекты. Компания делает ставку на оригинальные сюжеты, качественную графику и интуитивно понятный геймплей, что позволяет им привлекать внимание как новых, так и опытных геймеров.</p>
+        <img src="../static/images/liam-prav.png" class="mez">
+        <p class="aboutITGO1">Проект "Лиам"</p>
+        <p class="aboutITGO">Одним из ключевых проектов ITGO Games является визуальная новелла "Лиам". Эта игра погружает игроков в увлекательную историю с глубоко проработанными персонажами и эмоциональными сюжетными линиями. Визуальные новеллы являются популярным жанром благодаря своей способности сочетать литературу с визуальными и звуковыми элементами, создавая уникальный опыт для игроков.</p>
+        <p class="aboutITGO1">Разработка 2D версии</p>
+        <p class="aboutITGO">Учитывая успех оригинальной версии "Лиам", ITGO Games решила расширить свою аудиторию, начав разработку 2D версии игры. Это решение направлено на то, чтобы сделать игру более функциональной и доступной на нескольких платформах, включая ПК, Android, Яндекс Игры и ВК Игры. Таким образом, игроки смогут наслаждаться "Лиамом" на своих любимых устройствах, будь то компьютер или мобильный телефон.</p>
+        <img src="../static/images/PC.png" class="mezd">
+        <p class="aboutITGO1">ПК и Android</p>
+        <p class="aboutITGO">Версии для ПК, Android и ISO позволят игрокам наслаждаться игрой как дома, так и на ходу. Оптимизация под разные устройства обеспечит высокое качество игры независимо от платформы, на которой она запускается.</p>
+        <img src="../static/images/VYA.png" class="mez">
+        <p class="aboutITGO1">Яндекс Игры и ВК Игры</p>
+        <p class="aboutITGO">Выход игры на платформах Яндекс Игры и ВК Игры открывает дополнительные возможности для взаимодействия с игроками, особенно в странах СНГ, где эти платформы широко популярны. Интеграция с социальными сетями и возможностями онлайн-платформ позволит расширить функционал игры, добавив социальные элементы и возможности для сетевой игры.</p>
+        <p class="aboutITGO1">Заключение</p>
+        <p class="aboutITGO">ITGO Games демонстрирует приверженность качеству и инновациям, разрабатывая свои проекты с учетом потребностей и предпочтений аудитории. Расширение доступности визуальной новеллы "Лиам" на различные платформы показывает стремление компании к тому, чтобы их игры были доступными и удобными для широкого круга игроков. Внимание к деталям и желание развиваться делают ITGO Games студией, за которой стоит следить в будущем.</p>
+        <p class="aboutITGO">Мы стремимся к тому, чтобы каждый наш проект был уникальным и приносил радость и удовлетворение нашим клиентам. С ITGO и ITGO Games ваш бизнес станет более эффективным, а развлечения более захватывающими.</p>
+    </div>
+    <div class="button-container">
+        <a href="../AllGame/" class="button-link">
+            <img src="../static/images/uzn-play.png" class="button-img" alt="Узнать больше" id="button-img-more">
+        </a>
+    </div>
+    <div class="button-container">
+        <a href="../home/" class="button-link">
+            <img src="../static/images/undo.png" class="button-img" alt="назад" id="button-img-back">
+        </a>
+    </div>
+    <script>
+        const buttonImgMore = document.getElementById('button-img-more');
+        buttonImgMore.addEventListener('mouseover', () => {
+            buttonImgMore.src = '../static/images/uzn-play-naz.png';
+        });
+        buttonImgMore.addEventListener('mouseout', () => {
+            buttonImgMore.src = '../static/images/uzn-play.png';
+        });
+        
+        const buttonImgBack = document.getElementById('button-img-back');
+        buttonImgBack.addEventListener('mouseover', () => {
+            buttonImgBack.src = '../static/images/undo-naz.png';
+        });
+        buttonImgBack.addEventListener('mouseout', () => {
+            buttonImgBack.src = '../static/images/undo.png';
+        });
+    </script>
+</body>
+</html>

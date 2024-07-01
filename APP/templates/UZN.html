@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/uzn.css">
+    <link rel="icon" href="../static/images/ITGOGame.png" type="image/x-icon">
+    <title>Узнать о выходе</title>
+</head>
+<body>
+    <header class="header"> <!-- Блок заголовка страницы -->
+        <a href="../ITGOGames/">
+            <img src="../static/images/ITGOGames-logo.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../ITGOGames/">Главная</a></li>
+                <li><a href="../aboutITGOGames/">О нас</a></li>
+                <li><a href="../ITGOGContact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slogan-container">
+            <img src="../static/images/TGOGame-verh.png" class="slogan">
+        </div>
+    </div>
+    <div class="ITGOlt">
+        <p class="aboutITGO1">Игра выйдет через:</p>
+    </div>
+    <script src="//megatimer.ru/get/2c9ae86f9a283697d36d5c58b5bd33aa.js"></script>
+    <div class="button-container">
+        <a href="../checkout/" class="button-link">
+            <img src="../static/images/uzn-whd.png" class="button-img" alt="Узнать больше" id="button">
+        </a>
+    </div>
+    <div class="button-container">
+        <a href="../AllGame/" class="button-link">
+            <img src="../static/images/nazad.png" class="button-img" alt="Узнать больше" id="button-img">
+        </a>
+    </div>
+    <script>
+        const buttonImg = document.getElementById('button-img');
+        buttonImg.addEventListener('mouseover', () => {
+            buttonImg.src = '../static/images/nazad-naz.png';
+        });
+        buttonImg.addEventListener('mouseout', () => {
+            buttonImg.src = '../static/images/nazad.png';
+        });
+        const button = document.getElementById('button');
+        button.addEventListener('mouseover', () => {
+            button.src = '../static/images/uzn-whd-naz.png';
+        });
+        button.addEventListener('mouseout', () => {
+            button.src = '../static/images/uzn-whd.png';
+        });
+    </script>
+</body>
+</html>

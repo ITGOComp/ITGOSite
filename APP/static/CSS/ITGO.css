@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 500;
+    height: 80px;
+    line-height: 80px;
+}
+
+.header nav {
+    margin-left: auto;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+}
+
+.content {
+    margin-top: 50px;
+}
+
+.slogan-container {
+    text-align: center;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.slogan {
+    max-width: 200%;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header {
+    transition: height 0.3s ease;
+}
+
+.prilozhenie-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.prilozhenie {
+    margin-left: 30px;
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+    padding: 150px;
+    text-align: center;
+    width: 80%;
+}
+
+.text-wrapper {
+    font-family: "Inter-MediumItalic", Helvetica;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.second-layer {
+    margin-top: -120px;
+}
+
+.style-layer {
+    width: 100%;
+    text-align: center;
+}
+
+.style-layer .text-desinge {
+    font-family: "Inter-MediumItalic", Helvetica;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -216px; /* учитываем отступ между изображениями */
+    margin-top: 10px;
+    margin-right: 30px; /* отступ от правого края */
+    margin-left: 30px; /* отступ от нижнего края */
+}
+
+.image-container img {
+    width: calc(50% - 108px); /* ширина изображения с учетом отступа */
+}
+
+.merch-layer {
+    width: 100%;
+    text-align: center;
+}
+
+.merch-layer .text-merch {
+    font-family: "Inter-MediumItalic", Helvetica;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000;
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: 50px;
+}
+
+.image-container-merch {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -216px; /* учитываем отступ между изображениями */
+    margin-top: 10px;
+    margin-right: 30px; /* отступ от правого края */
+    margin-left: 30px; /* отступ от нижнего края */
+}
+
+.image-container-merch img {
+    width: calc(50% - 108px); /* ширина изображения с учетом отступа */
+}
+
+.shop {
+    display: block; /* Чтобы изображение было блочным элементом */
+    margin: 0 auto; /* Автоматическое выравнивание по центру по горизонтали */
+    margin-top: 50px; /* Подстройка вертикального отступа, при необходимости */
+    width: 300px; /* Установите желаемую ширину */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0; 
+}
+
+.button-link {
+    display: inline-block;
+}
+
+.button-img {
+    width: 300px; 
+    height: auto;
+    transition: transform 0.3s, opacity 0.3s; 
+}
+
+.button-link:hover .button-img {
+    transform: scale(1.1); 
+    opacity: 1; /* Установим opacity на 1 для устранения серого цвета */
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="icon" href="../static/images/ITGOlog.png" type="image/x-icon">
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header"> <!-- Блок заголовка страницы -->
+        <a href="">
+            <img src="../static/images/ITGO_nazvanie_bezfona.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="../about/">О нас</a></li>
+                <li><a href="../contact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slogan-container">
+            <img src="../static/images/ITGO_slogan.png" class="slogan">
+        </div>
+    </div>
+    <div class="ITCorp">
+        <p class="text-desinge">Мы одна из лучших IT компаний, которые предоставляют услуги по:</p>
+    </div>
+    <div class="services">
+        <div class="bg">
+            <img src="../static/images/tg-fon.png" class="fontg-img">
+            <div class="content-sered">
+                <p class="text-sred">Созданию телеграмм ботов</p>
+                <img src="../static/images/tgprav.png" class="prav-img">
+            </div>
+        </div>
+        <div class="bg">
+            <img src="../static/images/sait-fon.png" class="fontg-img">
+            <div class="content-sered">
+                <p class="text-sred">Созданию сайтов</p>
+                <img src="../static/images/sait-prav.png" class="prav-img">
+            </div>
+        </div>
+        <div class="bg">
+            <img src="../static/images/liam-fon.png" class="fontg-img">
+            <div class="content-sered">
+                <p class="text-sred">Созданию игр</p>
+                <img src="../static/images/liam-prav.png" class="prav-img">
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="../about/" class="button-link">
+            <img src="../static/images/uzn_bol.png" class="button-img" alt="Узнать больше" id="button-img">
+        </a>
+    </div>
+    <script>
+        const buttonImg = document.getElementById('button-img');
+        buttonImg.addEventListener('mouseover', () => {
+            buttonImg.src = '../static/images/uzn_bol_naz.png';
+        });
+        buttonImg.addEventListener('mouseout', () => {
+            buttonImg.src = '../static/images/uzn_bol.png';
+        });
+    </script>
+</body>
+</html>

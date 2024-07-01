@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/ITGO.css">
+    <link rel="icon" href="../static/images/ITGOlog.png" type="image/x-icon">
+    <title>Главная</title>
+</head>
+<body>
+    <header class="header">
+        <a href="">
+            <img src="../static/images/ITGO_nazvanie_bezfona.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="../ITGOabout/">О нас</a></li>
+                <li><a href="../ITGOContact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="slogan-container">
+            <img src="../static/images/ITGO_slogan.png" class="slogan">
+        </div>
+        <div class="second-layer">
+            <div class="prilozhenie-wrapper">
+                <img src="../static/images/ITGO_prilozhenie.png" class="prilozhenie">
+                <div class="label">
+                    <p class="text-wrapper">Мы Создадим Вам Сайт, Приложение,<br />логотип И Т.д.</p>
+                </div>
+            </div>
+        </div>
+        <div class="style-layer">
+            <p class="text-desinge">Наша компания займется для вас поиском офиса и оформит его в вашем стиле!</p>
+        </div>
+        <div class="image-container">
+            <img src="../static/images/ITGO_offis.png" alt="Ofice">
+            <img src="../static/images/ITGO_viviska.png" alt="viviska">
+          </div>
+          <div class="merch-layer">
+            <p class="text-merch">Мы селаем качественный мерч по вашему запросу.</p>
+        </div>
+        <div class="image-container-merch">
+            <img src="../static/images/ITGO_futbolka_muzhskaya.png" alt="men">
+            <img src="../static/images/ITGO_futbolka_zhenskaya.png" alt="girl">
+        </div>
+    </section>
+    <div class="button-container">
+        <a href="../zakaz/" class="button-link">
+            <img src="../static/images/zakaz.png" class="button-img" alt="Узнать больше" id="button-img">
+        </a>
+    </div>
+    <div class="button-container">
+        <a href="../home/" class="button-link">
+            <img src="../static/images/undo.png" class="button-img" alt="назад" id="button">
+        </a>
+    </div>
+    <script>
+        const buttonImg = document.getElementById('button-img');
+        buttonImg.addEventListener('mouseover', () => {
+            buttonImg.src = '../static/images/zakaz-naz.png';
+        });
+        buttonImg.addEventListener('mouseout', () => {
+            buttonImg.src = '../static/images/zakaz.png';
+        });
+        const button = document.getElementById('button');
+        button.addEventListener('mouseover', () => {
+            button.src = '../static/images/undo-naz.png';
+        });
+        button.addEventListener('mouseout', () => {
+            button.src = '../static/images/undo.png';
+        });
+    </script>
+</body>
+</html>

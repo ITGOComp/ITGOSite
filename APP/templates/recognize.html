@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/about.css">
+    <link rel="icon" href="../static/images/ITGOlog.png" type="image/x-icon">
+    <title>О нас</title>
+</head>
+<body>
+    <header class="header"> <!-- Блок заголовка страницы -->
+        <a href="../home/">
+            <img src="../static/images/ITGO_nazvanie_bezfona.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../home/">Главная</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="../contact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slogan-container">
+            <img src="../static/images/ITGO_slogan.png" class="slogan">
+        </div>
+    </div>
+    <div class="ITGOlt">
+        <img src="../static/images/ITGOlogo.png" class="logoITGO-img">
+        <p class="textITGO">ITGO (Information Technology Group Online)</p>
+        <p class="aboutITGO">ITGO — это ведущая компания в области информационных технологий, специализирующаяся на создании
+            высококачественных веб-сайтов и телеграмм-ботов. Наша компания основана на стремлении к инновациям, креативности
+            и высокому уровню профессионализма, что позволяет нам удовлетворять потребности самых взыскательных клиентов.<br><br>Наши
+            услуги:</p>
+        <ol class="number">
+            <li>Разработка веб-сайтов: Мы создаем функциональные, привлекательные и адаптивные веб-сайты для различных целей — от корпоративных сайтов до интернет-магазинов. Наша команда разработчиков обеспечивает индивидуальный подход к каждому проекту, чтобы обеспечить наилучший пользовательский опыт.</li><br>
+            <li>Телеграмм-боты: Мы специализируемся на разработке телеграм-ботов для автоматизации бизнес-процессов, улучшения обслуживания клиентов и создания интерактивных решений. Независимо от целей вашего бота — будь то автоматизация заказов или предоставление информации — мы создадим решение, которое соответствует вашим потребностям.</li>
+        </ol>
+    </div>
+    <div class="button-container">
+        <a href="../ITGO/" class="button-link">
+            <img src="../static/images/uzn-ITGO.png" class="button-img" alt="Узнать больше" id="button-img">
+        </a>
+    </div>
+    <script>
+        const buttonImg = document.getElementById('button-img');
+        buttonImg.addEventListener('mouseover', () => {
+            buttonImg.src = '../static/images/uzn-ITGOnaz.png';
+        });
+        buttonImg.addEventListener('mouseout', () => {
+            buttonImg.src = '../static/images/uzn-ITGO.png';
+        });
+    </script>
+    <div class="ITGOlt">
+        <img src="../static/images/ITGO_Games.png" class="logoITGO-img">
+        <p class="textITGO">ITGO Games</p>
+        <p class="aboutITGO">ITGO Games — дочерняя компания ITGO, специализирующаяся на разработке увлекательных и инновационных игр для различных платформ.
+            <br> <br>Наши игры:</p>
+        <ol class="number">
+            <li>Мобильные игры: Мы создаем захватывающие мобильные игры для iOS и Android, которые поражают удивительной графикой, увлекательным геймплеем и высокой переиграбельностью.</li><br>
+            <li>Игры для социальных платформ: Наша команда разрабатывает игры для различных социальных платформ, таких как Yandex и VKontakte, чтобы предоставить пользователям новые способы взаимодействия и развлечения.</li>
+        </ol>
+        <p class="aboutdopITGO">Мы стремимся к тому, чтобы каждый наш проект был уникальным и приносил радость и удовлетворение нашим клиентам. С ITGO и ITGO Games ваш бизнес станет более эффективным, а развлечения более захватывающими.</p>
+    </div>
+    <div class="button-container1">
+        <a href="../ITGOGames/" class="button-link">
+            <img src="../static/images/uzn-ITGOG.png" class="button-img1" alt="Узнать больше" id="button-img1">
+        </a>
+    </div>
+    <script>
+        const buttonImg2 = document.getElementById('button-img1');
+        buttonImg2.addEventListener('mouseover', () => {
+            buttonImg2.src = '../static/images/uzn-ITGOG-naz.png';
+        });
+        buttonImg2.addEventListener('mouseout', () => {
+            buttonImg2.src = '../static/images/uzn-ITGOG.png';
+        });
+    </script>
+</body>
+</html>

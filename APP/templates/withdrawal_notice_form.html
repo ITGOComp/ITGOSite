@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="icon" href="../static/images/ITGOGame.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/DownloadUzn.css">
+</head>
+<body>
+    <h1 class="centered-italic">Оставьте свои контакты и мы оповестим вас когда наша игра выйдет!</h1>
+    <form action="{% url 'withdrawal_notice_form' %}" method="POST" class="application-form">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="mail">Почта:</label>
+            <input type="email" id="mail" name="mail">
+        </div>
+        <input type="submit" value="Отправить" class="btn-submit">
+    </form>
+    <div class="button-container">
+        <a href="../recognize/" class="button-link">
+            <img src="../static/images/nazad.png" class="button-img" alt="Узнать больше" id="button-img">
+        </a>
+    </div>
+    {% if success %}
+    <div class="overlay" id="overlay" style="display: flex;">
+        <div class="popup">
+            <h2>Данные успешно отправлены!</h2>
+            <p>Мы свяжемся с вами, когда игра выйдет.</p>
+            <button onclick="closePopup()">Закрыть</button>
+        </div>
+    </div>
+    {% endif %}
+    <script>
+        // Функция для форматирования номера телефона
+        function formatPhoneNumber() {
+            let phoneNumberInput = document.getElementById('phone');
+            let phoneNumber = phoneNumberInput.value.replace(/\D/g, ''); // Удаляем все символы, кроме цифр
+            let formattedPhoneNumber = '';
+            
+            if (phoneNumber.length > 0 && phoneNumber[0] !== '8') {
+            formattedPhoneNumber += '8';
+            }
+            if (phoneNumber.length >= 1) {
+                formattedPhoneNumber += phoneNumber.substring(0, 1);
+            }
+            if (phoneNumber.length >= 2) {
+                formattedPhoneNumber += ' ' + phoneNumber.substring(1, 4);
+            }
+            if (phoneNumber.length >= 5) {
+                formattedPhoneNumber += ' ' + phoneNumber.substring(4, 7);
+            }
+            if (phoneNumber.length >= 8) {
+                formattedPhoneNumber += '-' + phoneNumber.substring(7, 9);
+            }
+            if (phoneNumber.length >= 10) {
+                formattedPhoneNumber += '-' + phoneNumber.substring(9, 11);
+            }
+    
+            phoneNumberInput.value = formattedPhoneNumber; // Устанавливаем отформатированный номер обратно в поле
+        }
+    
+        // Добавляем обработчик события ввода
+        document.getElementById('phone').addEventListener('input', formatPhoneNumber);
+    </script>
+    <script>
+        const buttonImg = document.getElementById('button-img');
+        buttonImg.addEventListener('mouseover', () => {
+            buttonImg.src = '../static/images/nazad-naz.png';
+        });
+        buttonImg.addEventListener('mouseout', () => {
+            buttonImg.src = '../static/images/nazad.png';
+        });
+        const form = document.forms['application-form'];
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+            // Добавьте ваш код для отправки формы на сервер
+
+            // После успешной отправки формы, покажем всплывающее окно
+            document.getElementById('overlay').style.display = 'flex';
+        });
+
+        function closePopup() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

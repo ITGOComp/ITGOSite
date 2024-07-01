@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/uzn.css">
+    <link rel="icon" href="../static/images/ITGOGame.png" type="image/x-icon">
+    <title>Узнать о играх</title>
+</head>
+<body>
+    <header class="header"> <!-- Блок заголовка страницы -->
+        <a href="../ITGOGames/">
+            <img src="../static/images/ITGOGames-logo.png" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../ITGOGames/">Главная</a></li>
+                <li><a href="../aboutITGOGames/">О нас</a></li>
+                <li><a href="../ITGOGContact/">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slogan-container">
+            <img src="../static/images/TGOGame-verh.png" class="slogan">
+        </div>
+    </div>
+    <div class="ITGOlt">
+        <img src="../static/images/liam-prav.png" class="logoITGO-img">
+        <p class="textITGO">История Лиама</p>
+        <p class="aboutITGO1">Сюжет</p>
+        <p class="aboutITGO">Лиам живет в уютной деревне Линдор, но мечтает о большем и стремится покинуть свои родные места, чтобы начать новую жизнь в городе FreeCiti. Однако, чтобы совершить это путешествие, ему предстоит пройти через множество испытаний и разгадать загадки, которые стоят на его пути. В ходе своего путешествия Лиам встретит различных персонажей, некоторые из которых будут помогать ему, а некоторые - противодействовать. Помимо этого, Лиам будет исследовать различные локации, собирать предметы, решать головоломки и принимать решения, которые будут влиять на ход сюжета и исход его путешествия.</p>
+        <p class="aboutITGO1">Особенности игры</p>
+        <ul class="number">
+            <li>Красочная графика и атмосферный саундтрек.</li>
+            <li>Интересные персонажи с разнообразными характерами и мотивациями.</li>
+            <li>Разнообразные локации, начиная с уютной деревни и заканчивая шумным городом.</li>
+            <li>Загадки и головоломки, которые требуют логики и внимательности.</li>
+            <li>Несколько вариантов развития сюжета в зависимости от принятых игроком решений.</li>
+        </ul>
+    </div>
+    <div class="button-container">
+        <a href="../DownloadLiam/" class="button-link">
+            <img src="../static/images/download.png" class="button-img" alt="Узнать больше" id="button-img">
+        </a>
+    </div>
+    <div class="ITGOlt">
+        <img src="../static/images/Liam2d.png" class="logoITGO-img">
+        <p class="textITGO">Приключения Лиама</p>
+        <p class="aboutITGO1">Сюжет</p>
+        <p class="aboutITGO">Лиам живет в уютной деревне Линдор, но мечтает о большем и стремится покинуть свои родные места, чтобы начать новую жизнь в городе FreeCiti. Однако, чтобы совершить это путешествие, ему предстоит пройти через множество испытаний и разгадать загадки, которые стоят на его пути. В ходе своего путешествия Лиам встретит различных персонажей, некоторые из которых будут помогать ему, а некоторые - противодействовать. Помимо этого, Лиам будет исследовать различные локации, собирать предметы, решать головоломки и принимать решения, которые будут влиять на ход сюжета и исход его путешествия.</p>
+        <p class="aboutITGO1">Особенности игры</p>
+        <p class="aboutITGO">Это будет ремейк игры "История Лиама" с небольшим дополнением. Он будет полностью переписан под движок Godot и переделан в платформер.</p>
+    </div>
+    <div class="button-container">
+        <a href="../recognize/" class="button-link">
+            <img src="../static/images/uzn-whd.png" class="button-img" alt="Узнать больше" id="button">
+        </a>
+    </div>
+    <div class="button-container">
+        <a href="../ITGOGames/" class="button-link button-link-back">
+            <img src="../static/images/nazad.png" class="button-img" alt="Узнать больше" id="button-img1">
+        </a>
+    </div>
+    <script>
+        const buttonImg = document.getElementById('button-img');
+        buttonImg.addEventListener('mouseover', () => {
+            buttonImg.src = '../static/images/download-naz.png';
+        });
+        buttonImg.addEventListener('mouseout', () => {
+            buttonImg.src = '../static/images/download.png';
+        });
+
+        const button = document.getElementById('button');
+        button.addEventListener('mouseover', () => {
+            button.src = '../static/images/uzn-whd-naz.png';
+        });
+        button.addEventListener('mouseout', () => {
+            button.src = '../static/images/uzn-whd.png';
+        });
+
+        const buttonImg1 = document.getElementById('button-img1'); // Исправлено на 'button-img1'
+        buttonImg1.addEventListener('mouseover', () => {
+            buttonImg1.src = '../static/images/nazad-naz.png';
+        });
+        buttonImg1.addEventListener('mouseout', () => {
+            buttonImg1.src = '../static/images/nazad.png';
+        });
+    </script>
+</body>
+</html>
